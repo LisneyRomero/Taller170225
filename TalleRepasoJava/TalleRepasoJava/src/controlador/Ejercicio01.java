@@ -8,8 +8,9 @@ public class Ejercicio01 {
 
 	/*
 	 * Realizar un programa en java que permita llenar dos vectores por teclado con
-	 * numeros aleatorios del 1 al 500 a: Mostrar la cantidad de numeros pares en
-	 * ambos vectores b: Indicar cual de los vectores contiene mas numeros impares
+	 * numeros aleatorios del 1 al 500 
+  	 * a: Mostrar la cantidad de numeros pares en ambos vectores 
+    	 * b: Indicar cual de los vectores contiene mas numeros impares
 	 * c: Mostrar los vectores ordenados ascendentemente (usando Stream)
 	 */
 

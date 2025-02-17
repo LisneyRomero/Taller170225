@@ -8,9 +8,8 @@ public class Ejercicio01 {
 
 	/*
 	 * Realizar un programa en java que permita llenar dos vectores por teclado con
-	 * numeros aleatorios del 1 al 500
-	 * a: Mostrar la cantidad de numeros pares en ambos vectores 
-	 * b: Indicar cual de los vectores contiene mas numeros impares 
+	 * numeros aleatorios del 1 al 500 a: Mostrar la cantidad de numeros pares en
+	 * ambos vectores b: Indicar cual de los vectores contiene mas numeros impares
 	 * c: Mostrar los vectores ordenados ascendentemente (usando Stream)
 	 */
 
@@ -18,7 +17,7 @@ public class Ejercicio01 {
 
 		Scanner lector = new Scanner(System.in);
 
-		//variables
+		// variables
 		int tamano = 0;
 		int limite1 = 1;
 		int limite2 = 500;
@@ -42,7 +41,7 @@ public class Ejercicio01 {
 		System.out.println();
 		for (int i = 0; i < tamano; i++) {
 			System.out.print("VectorA" + (i + 1) + ": ");
-			int random1 = (int) (Math.random() * (limite2 - limite1 + 1) + limite1); //generacion de numero aleatorio
+			int random1 = (int) (Math.random() * (limite2 - limite1 + 1) + limite1); // generacion de numero aleatorio
 			vector1[i] = random1;
 			System.out.println("" + vector1[i]);
 			// cuenta los pares y los impares
@@ -58,7 +57,7 @@ public class Ejercicio01 {
 		System.out.println();
 		for (int i = 0; i < tamano; i++) {
 			System.out.print("VectorB" + (i + 1) + ": ");
-			int random1 = (int) (Math.random() * (limite2 - limite1 + 1) + limite1); //generacion de numero aleatorio
+			int random1 = (int) (Math.random() * (limite2 - limite1 + 1) + limite1); // generacion de numero aleatorio
 			vector2[i] = random1;
 			System.out.println("" + vector2[i]);
 			// cuenta los pares y los impares
@@ -73,8 +72,8 @@ public class Ejercicio01 {
 		System.out.println("hay " + contP1 + " pares en Vector A");
 		System.out.println("hay " + contP2 + " pares en Vector B");
 		System.out.println();
-		
-		//determina que vector tiene mas numeros impares
+
+		// determina que vector tiene mas numeros impares
 		String contador = (contI1 == contI2) ? "ambos tienen igual numero de impares"
 				: (contI1 > contI2) ? "el vector A tiene mas numeros impares" : "el vector B tiene mas numeros impares";
 		System.out.println(contador);
